@@ -2,7 +2,7 @@
 
 Music iOS application on JavaScript which I started to develop in june 2014 so now code looks quite old. For one year this app and Swayer Super Sampler were downloaded around 20k times!
 
-![https://raw.githubusercontent.com/keske/Skills/master/github/images/photo.jpg](https://raw.githubusercontent.com/keske/Skills/master/github/images/photo.jpg)
+![https://itunes.apple.com/us/app/skills!/id952734764?ls=1&mt=8](https://raw.githubusercontent.com/keske/Skills/master/github/images/photo.jpg)
 
 ## About 
 Firstly, Skills is the best beat maker and the peachiest pad tracker you have ever. Why so? 
@@ -14,7 +14,7 @@ b. Zillion of presets literally. (there is a super shuffle machine that mix 
 c. An enormous mass of the most realistic samples.
 Secondly, with Skills you can only depend on your skills and ability to make your beat sounds smooth and catchy. 
 
-![https://raw.githubusercontent.com/keske/Skills/master/github/images/itunes.png](https://raw.githubusercontent.com/keske/Skills/master/github/images/itunes.png)
+![https://itunes.apple.com/us/app/skills!/id952734764?ls=1&mt=8](https://raw.githubusercontent.com/keske/Skills/master/github/images/itunes.png)
 [Skills on AppStore](https://itunes.apple.com/us/app/skills!/id952734764?ls=1&mt=8)
 
 ## Development
