@@ -1,0 +1,70 @@
+html {
+	height: 100%;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	
+	overflow: hidden;
+
+	user-select: none;
+	
+}
+
+body {
+	@include font();
+	
+	border-radius: 3px;
+
+	margin: 0;
+	height: 100%;
+	font-size: 22px;
+
+	&.show-about-menu {
+
+		.header-about {
+			@include blur-and-icon('close');
+		}
+
+		.pads,
+		.header-random-all,
+		.help-menu,
+		.header-help {
+			// @include blur(10px);
+		}
+
+		.header-about {
+			z-index: 99999;
+		}
+
+		.about-menu {
+			top: 0;
+			opacity: 1;
+		}
+	}
+
+	&.show-help-menu {
+		.pads,
+		.header-random-all,
+		.about-menu,
+		.header-about {
+			// @include blur(10px);
+		}
+
+		.header-help {
+			z-index: 99999;
+		}
+
+		.help-menu {
+			top: 0;
+			opacity: 1;
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+.show-after-load {
+	display: none;
+}

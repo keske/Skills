@@ -1,0 +1,137 @@
+@mixin pad-design() {
+
+	border-radius: 5px;
+	-webkit-transform: scale(0.9);
+	
+	background: #FFF;
+
+	transform-style: preserve-3d;
+	
+	&:active {
+		-webkit-transform: scale(0.87);
+	}
+
+	p {
+		color: #999;
+		position: absolute;
+
+		font-size: 10px;
+
+		margin-left: 10px;
+	}
+
+	&.pad-wants-to-change {
+
+		img.refresh {
+			opacity: 1;
+			// display: inline-block;
+		}
+	}
+
+	&.refresh-one {
+
+		img.refresh {
+			-webkit-transform: rotateZ(360deg);
+			transition: 0.7s linear;
+			opacity: 1;
+		}
+	}
+
+	&.hold {
+		-webkit-transform: scale(0.93);
+	}
+
+	&.unhold {
+		transition: -webkit-transform !important;
+	}
+	
+	// random image
+	img.refresh {
+		right: 5px;
+
+		opacity: 0;
+
+		position: absolute;
+
+		display: block;
+
+		margin: 10px;
+		width: 20px;
+	}
+
+	.effects-block {
+		position: absolute;
+		bottom: 10px;
+
+		img.effect {
+			margin-left: 10px;
+
+			width: 20px;
+
+			display: none;
+
+			&.show {
+				display: inline-block;
+			}
+		}
+	}
+}
+
+.pads {
+	transition: 0.3s -webkit-filter;
+	-webkit-perspective: 1000;
+
+	&.blur {
+		@include blur(55px);
+		transition: 0.5s -webkit-filter;
+	}
+	
+	.pad {
+		@include pad-design();
+
+		@mixin animation($startDuration, $endDuration) {
+			opacity: 1;
+
+			transition: -webkit-transform, opacity $startDuration linear;
+
+			&.refresh {
+				opacity: 0;
+				transition: opacity $endDuration linear;
+
+				-webkit-transform: rotateZ(180deg);
+				transition: -webkit-transform, opacity $endDuration linear;
+			}
+		}
+
+		@for $i from 1 through 12 {
+			&:nth-child(#{$i}) {
+				@include animation($i * 0.1s, ($i / 2) * 0.1s);
+			}
+		}
+
+		&.refresh {
+
+			.effects-block, p {
+				display: none;
+			}
+		}
+	}
+}
+
+// Disable click or tap on pad
+// when samples are loading
+.load-samples-bg {
+	position: absolute;
+	z-index: 31337;
+
+	top: -9999px;
+	left: -9999px;
+
+	width: 100%;
+	height: 100%;
+
+	&.show {
+		top: 0;
+		left: 0;
+	}
+}

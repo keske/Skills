@@ -1,0 +1,14 @@
+.float {
+  float: left;
+}
+
+.opacity {
+
+  &.opacity-50 {
+    opacity: .5;
+  }
+  
+  &.opacity-70 {
+    opacity: .7;
+  }
+}

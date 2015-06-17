@@ -1,0 +1,92 @@
+// Common buttons in header and footer
+@mixin header-and-footer-button() {
+    @include press-effect-when-active();
+
+    text-align: center;
+    position: relative;
+
+    padding: 10px 0;
+    
+    .icon {
+        $size: 50px;
+
+        width: $size;
+        height: $size;
+
+        display: inline-block;
+        opacity: .7;
+
+        overflow: hidden;
+        background-repeat: no-repeat;
+
+        background-size: $size auto;
+    }
+
+    &.active {
+        .icon {
+            opacity: 1;
+        }
+    }
+}
+
+// Blur icon
+@mixin blur-and-icon($icon) {
+    &.blur {
+        @include blur(10px);
+    }
+
+    .icon {
+        @extend .svg-#{$icon};
+    }
+}
+
+// Press effect
+@mixin press-effect-when-active() {
+    &:active {
+        -webkit-transform: scale(.9);
+    }
+}
+.press-effect-when-active {
+    @include press-effect-when-active();
+}
+
+/*
+ * Blur effect
+ *
+ * @param {String} $radius
+ */
+@mixin blur($radius) {
+    -webkit-filter: blur($radius);
+}
+
+/*
+ * Radial gradient
+ *
+ * @param {String} $from 
+ * @param {String} $to
+ */
+@mixin radial-gradient($from, $to) {
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%,
+    	color-stop(0%,$from),
+    	color-stop(100%,$to));
+    background: -webkit-radial-gradient(center, ellipse cover,
+    	$from 0%,
+    	$to 100%);
+}
+
+// Clearfix
+@mixin clearfix() {
+    &:before,
+    &:after {
+        display: table;
+
+        content: ' ';
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.clearfix {
+    @include clearfix();
+}

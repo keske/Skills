@@ -1,0 +1,105 @@
+%svg {
+	background-repeat: no-repeat;
+	background-image: url(svg/sprite.svg);
+}
+
+.svg-close {
+	background-position: 0 0;
+	@extend %svg;
+}
+
+.svg-close-dims {
+	width: 50px;
+	height: 50px;
+}
+
+.svg-delay {
+	background-position: 0 -50px;
+	@extend %svg;
+}
+
+.svg-delay-dims {
+	width: 50px;
+	height: 50px;
+}
+
+.svg-help {
+	background-position: 0 -100px;
+	@extend %svg;
+}
+
+.svg-help-dims {
+	width: 50px;
+	height: 50px;
+}
+
+.svg-logo {
+	background-position: 0 -150px;
+	@extend %svg;
+}
+
+.svg-logo-dims {
+	width: 50px;
+	height: 50px;
+}
+
+.svg-menu {
+	background-position: 0 -200px;
+	@extend %svg;
+}
+
+.svg-menu-dims {
+	width: 50px;
+	height: 50px;
+}
+
+.svg-random-all {
+	background-position: 0 -250px;
+	@extend %svg;
+}
+
+.svg-random-all-dims {
+	width: 50px;
+	height: 50px;
+}
+
+.svg-random-one {
+	background-position: 0 -300px;
+	@extend %svg;
+}
+
+.svg-random-one-dims {
+	width: 50px;
+	height: 50px;
+}
+
+.svg-repeat {
+	background-position: 0 -350px;
+	@extend %svg;
+}
+
+.svg-repeat-dims {
+	width: 50px;
+	height: 50px;
+}
+
+.svg-swayer-app {
+	background-position: 0 -400px;
+	@extend %svg;
+}
+
+.svg-swayer-app-dims {
+	width: 50px;
+	height: 50px;
+}
+
+.svg-volume {
+	background-position: 0 -450px;
+	@extend %svg;
+}
+
+.svg-volume-dims {
+	width: 50px;
+	height: 50px;
+}
+

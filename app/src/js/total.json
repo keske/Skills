@@ -1,0 +1,6 @@
+var samples = {
+  'all': 470,
+  'kick': 778,
+  'hat': 331,
+  'snare': 468,
+};

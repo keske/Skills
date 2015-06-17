@@ -1,0 +1,104 @@
+header {
+
+  .header-about {
+    @include header-and-footer-button();
+    @include blur-and-icon('menu');
+  }
+
+  .header-random-all {
+    @include header-and-footer-button();
+    @include blur-and-icon('random-all');
+
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  .header-random-one {
+    @include header-and-footer-button();
+    @include blur-and-icon('random-one');
+
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  .header-about,
+  .header-random-one {
+
+    // iPhone 4s
+    @media (max-width: 320px) {
+      -webkit-transform: scale(0.49);
+
+      &:active {
+        -webkit-transform: scale(0.4);
+      }
+    }
+
+    // iPhone 5s
+    @media (min-width: 320px) {
+      -webkit-transform: scale(0.49);
+
+      &:active {
+        -webkit-transform: scale(0.4);
+      }
+    }
+
+    // iPhone 6
+    @media (min-width: 375px) {
+      -webkit-transform: scale(0.69);
+
+      &:active {
+        -webkit-transform: scale(0.6);
+      }
+    }
+
+    // iPhone 6+
+    @media (min-width: 540px) {
+      -webkit-transform: scale(0.69);
+
+      &:active {
+        -webkit-transform: scale(0.6);
+      }
+    }
+  }
+
+  .header-random-all {
+
+    // iPhone 4s
+    @media (max-width: 320px) {
+      -webkit-transform: scale(0.59);
+
+      &:active {
+        -webkit-transform: scale(0.5);
+      }
+    }
+
+    // iPhone 5s
+    @media (min-width: 320px) {
+      -webkit-transform: scale(0.59);
+
+      &:active {
+        -webkit-transform: scale(0.5);
+      }
+    }
+
+    // iPhone 6
+    @media (min-width: 375px) {
+      -webkit-transform: scale(0.79);
+
+      &:active {
+        -webkit-transform: scale(0.7);
+      }
+    }
+
+    // iPhone 6+
+    @media (min-width: 540px) {
+      -webkit-transform: scale(0.79);
+      
+      &:active {
+        -webkit-transform: scale(0.7);
+      }
+    }
+  }
+}

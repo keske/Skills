@@ -1,0 +1,125 @@
+footer {
+  position: absolute;
+  bottom: 5;
+  display: -webkit-box;
+  height: 10%;
+
+  // iPhone 4s
+  @media (max-width: 320px) {
+    bottom: 7;
+  }
+
+  // iPhone 5s
+  @media (min-width: 320px) {
+    bottom: 5;
+  }
+
+  // iPhone 6
+  @media (min-width: 375px) {
+    bottom: 3;
+  }
+
+  // iPhone 6+
+  @media (min-width: 540px) {
+    bottom: 3;
+  }
+
+  .footer-delay {
+    @include header-and-footer-button();
+    @include blur-and-icon('delay');
+  }
+
+  .footer-repeat {
+    @include header-and-footer-button();
+    @include blur-and-icon('repeat');
+
+    .icon {
+      width: 50px;
+      height: 49px;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  .footer-volume {
+    @include header-and-footer-button();
+    @include blur-and-icon('volume');
+
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  .footer-delay,
+  .footer-volume {
+
+    // iPhone 4s
+    @media (max-width: 320px) {
+      -webkit-transform: scale(0.39);
+      &:active {
+        -webkit-transform: scale(0.3);
+      }
+    }
+
+    // iPhone 5s
+    @media (min-width: 320px) {
+      -webkit-transform: scale(0.49);
+      &:active {
+        -webkit-transform: scale(0.4);
+      }
+    }
+
+    // iPhone 6
+    @media (min-width: 375px) {
+      -webkit-transform: scale(0.59);
+      &:active {
+        -webkit-transform: scale(0.5);
+      }
+    }
+
+    // iPhone 6+
+    @media (min-width: 540px) {
+      -webkit-transform: scale(0.59);
+      &:active {
+        -webkit-transform: scale(0.5);
+      }
+    }
+  }
+
+  .footer-repeat {
+
+    // iPhone 4s
+    @media (max-width: 320px) {
+      -webkit-transform: scale(0.59);
+      &:active {
+        -webkit-transform: scale(0.5);
+      }
+    }
+
+    // iPhone 5s
+    @media (min-width: 320px) {
+      -webkit-transform: scale(0.59);
+      &:active {
+        -webkit-transform: scale(0.5);
+      }
+    }
+
+    // iPhone 6
+    @media (min-width: 375px) {
+      -webkit-transform: scale(0.69);
+      &:active {
+        -webkit-transform: scale(0.6);
+      }
+    }
+    
+    // iPhone 6+
+    @media (min-width: 540px) {
+      -webkit-transform: scale(0.69);
+      &:active {
+        -webkit-transform: scale(0.6);
+      }
+    }
+  }
+}

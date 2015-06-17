@@ -1,0 +1,256 @@
+@mixin menu() {
+	width: 100%;
+	height: 100%;
+
+	position: fixed;
+	z-index: 998;
+
+	top: -9999px;
+	
+	overflow: scroll;
+	
+	opacity: 0;
+
+	// transition: 1s opacity;
+	// background: rgba(0, 0, 0, .8);
+
+	background: #000;
+	
+	padding-top: 30px;
+	padding-bottom: 180px;
+
+	h1 {
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+
+	h2 {
+		font-size: 26px;
+		margin-bottom: 5px;
+	}
+
+	h3 {
+		font-size: 22px;
+		margin-bottom: 5px;
+	}
+
+	a {
+		color: #FFF;
+	}
+}
+
+.menu-shadow-header {
+	width: 100%;
+	height: 10px;
+
+	position: fixed;
+	z-index: 1;
+
+	top: 0;
+	left: 0;
+}
+
+.about-menu {
+	@include menu();
+
+	.swayer-logo {
+		margin-top: 60px;
+
+		width: 50%;
+
+		margin-left: 25%;
+		margin-right: 10%;
+
+		img {
+			width: 90%;
+		}
+	}
+	
+	h1, h2, h3, p, .also-apps {
+		color: #FFF;
+
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	p {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.social-icons {
+		font-size: 12px;
+
+		margin-top: 10px;
+
+		.liga {
+			font-size: 16px;
+			margin-right: 5px;
+		}
+	}
+
+	.fb-button, .tw-button, .mail-button {
+		color: #FFF;
+
+		width: 100%;
+		display: block;
+
+		padding: 10px 0;
+
+		text-align: center;
+
+		&:active {
+			opacity: .8;
+		}
+	}
+
+	.fb-button {
+		background: $fb_color;
+
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+	}
+
+	.tw-button {
+		background: $tw_color;
+	}
+
+	.mail-button {
+		background: $mail_color;
+
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+
+		color: #000;	
+	}
+
+	.download {
+		border-radius: 3px;
+		padding: 7px 0;
+		text-align: center;
+
+		width: 80%;
+		
+		background: #FFF;
+
+		margin-top: 10px;
+		margin-bottom: 10px;
+
+		a {
+			font-weight: bold;
+			font-size: 13px;
+			color: #333;
+		}
+	}
+	
+	.also-apps {
+		@include clearfix();
+
+		margin-top: 20px;
+		
+		.icons {
+			text-align: center;
+
+			a {
+				display: inline-block;
+
+				span.icon {
+					
+					border-radius: 20%;
+
+					// iPhone 4s
+				    @media (max-width: 320px) {
+				        width: 55px;
+						height: 55px;
+				    }
+
+				    // iPhone 5s
+				    @media (min-width: 320px) {
+				        width: 55px;
+						height: 55px;
+				    }
+
+				    // iPhone 6
+				    @media (min-width: 375px) {
+				        width: 75px;
+						height: 75px;
+				    }
+
+				    // iPhone 6+
+				    @media (min-width: 540px) {
+				        width: 75px;
+						height: 75px;
+				    }
+					
+					background: url(../images/swayer-logo.png);
+
+					display: inline-block;
+
+					&.swayer {
+						background-size: cover;
+					}
+				}
+
+				span.name {
+					font-size: 12px;
+					color: #FFF;
+					display: block;
+
+					margin-top: 5px;
+				}
+			}
+		}
+		
+		.app-icon {
+			width: 10%;
+		}
+
+		.app-info {
+			margin-left: 20%;
+			width: 65%;
+
+			font-size: 12px;
+		}
+	}
+
+	.author {
+		margin-top: 40px;
+
+		font-size: 12px;
+		font-weight: bold;
+
+		margin-left: 10%;
+
+		a {
+			color: #FFF;
+		}
+	}
+
+	.made {
+		margin-top: 3px;
+		margin-left: 10%;
+
+		color: #FFF;
+		font-size: 12px;
+
+		opacity: .5;
+	}
+}
+
+.help-menu {
+	@include menu();
+
+	text-align: left;
+
+	color: #FFF;
+
+	p {	
+		color: #FFF;
+
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 100px;
+
+		font-size: 14px;
+	}
+}

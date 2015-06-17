@@ -1,0 +1,94 @@
+.effects-panel {
+	
+	position: relative;
+	z-index: 3;
+
+	text-align: center;
+
+	input[type="range"] {
+		width: 80%;
+
+		-webkit-appearance: none;
+		
+		border-radius: 5px;
+		background-color: rgba(255, 255, 255, .5);
+
+		height: 10px;
+		vertical-align: middle;
+
+		margin-bottom: 20px;
+	}
+
+	input[type='range']::-webkit-slider-thumb {
+		-webkit-appearance: none !important;
+
+		border-radius: 30px;
+		background-color: #FFF;
+
+		height: 30px;
+		width: 30px;
+	}
+
+	.panel {
+		@extend .row;
+
+		display: none;
+
+		padding: 10px 20px;
+
+		color: #FFF;
+
+		// box-shadow: 0 -3px 3px rgba(0, 0, 0, .17);
+		
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box; 
+
+		h3 {
+			margin-top: 10px;
+			margin-bottom: 5px;
+
+			font-size: 14px;
+			font-weight: normal;
+		}
+
+		p, span {
+			font-size: 12;
+		}
+
+		span {
+			display: block;
+		}
+
+		small {
+			font-size: 12px;
+			opacity: .5;
+		}
+
+		.padding-fix {
+			padding: 7px 0;
+		}
+
+		&.show {
+			display: block;
+		}
+	}
+	
+	.delay-panel {
+		input[type="range"] {
+			width: 90%;
+		}
+
+		small {
+			margin-top: 58px;
+			display: block;
+		}
+	}
+
+	.repeat-panel {
+		// 
+	}
+
+	.volume-panel {
+		// 
+	}
+}

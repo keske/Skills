@@ -1,0 +1,48 @@
+loading: Loading...
+
+################################################################
+# pads
+################################################################
+kick: Kick
+hat: Hi-Hat
+snare: Snare
+
+################################################################
+# effects
+################################################################
+delay_title: Delay effect on pad
+delay_howto: Tap and hold on pad to set/unset delay effect
+
+repeat_title: Repaet pad sample
+repeat_howto: Tap and hold on pad to repeat/unrepeat sample
+
+volume_title: Change volume for pad
+volume_howto: Tap and hold on pad to set/unset volume
+
+################################################################
+# about
+################################################################
+skills: Skills!
+about: "Firstly, Skills is the best beat maker and the peachiest pad tracker you have ever. Why so?<br /><br />a. Skills looks snazzy and sharp.<br />b. Zillion of presets literally. (there is a super shuffle machine that mix together a huge quantity of samples and compartmentalize them smart.) <br />c. An enormous mass of the most realistic samples.<br /><br />Secondly, with Skills you can only depend on your skills and ability to make your beat sounds smooth and catchy. "
+full_version: Full version contains over 400 samples.
+contacts: Get in touch with Skills!
+contact_reason: "News, community, videos and video batles, new samples and promocodes!"
+about_fb: — new videos
+about_tw: — news and promocodes
+about_mail: — suggestions and ideas
+
+################################################################
+# about swayer
+################################################################
+checkout: Also check out
+swayer: Swayer
+swayer_about: Swayer super sampler and pad master is your way to make music with a flair. Swayer has an expansive collection of presets. Each of them has its original and unique design that precisely characterize the theme of a preset's genre. All presets are free.
+swayer_contain: Swayer contains:<br />— Reggae guitars;<br />— House synth loops from 90x;<br />— Individual drums for each presets;<br />— Aggressive Dub Step bass-lines;<br />— Trap heavy basses;
+buy: Buy for $0.99
+open: Open in AppStore
+
+################################################################
+# author
+################################################################
+author: Andrey Keske
+made: 2015

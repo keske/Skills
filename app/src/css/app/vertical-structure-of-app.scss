@@ -1,0 +1,117 @@
+// Vertical structure of application
+//
+// wrap
+// |- header -- 10% of height
+// |- pads where each pad -- 10% of height
+// |- effects panel -- from 10% to 30% of height
+// |- footer -- 10% of height
+// $animate: 0.1s;
+
+.wrap {
+  -webkit-box-orient: vertical;
+  -webkit-box-flex: 1;
+
+  position: absolute;
+
+  top: 0px;
+  left: 0px;
+  right: 0;
+  bottom: 0px;
+
+  width: 100%;
+  height: 100%;
+
+  // iPhone 4s
+  @media (max-width: 320px) {
+
+    header {
+      display: -webkit-box;
+      height: 11%;
+    }
+
+    // Show effects panel
+    &.show-effects-panel {
+
+      .pads .pad {
+        height: 14%;
+      }
+
+      .effects-panel {
+        height: 10%;
+        display: block;
+      }
+    }
+  }
+
+  // iPhone 6
+  @media (min-width: 375px) {
+
+    // Show effects panel
+    &.show-effects-panel {
+
+      .pads .pad {
+        height: 15%;
+      }
+
+      .effects-panel {
+        margin-top: 1%;
+
+        height: 10%;
+
+        display: block;
+      }
+    }
+  }
+  // iPhone 6+
+  @media (min-width: 540px) {
+
+    // Show effects panel
+    &.show-effects-panel {
+
+      .pads .pad {
+        height: 15%;
+      }
+
+      .effects-panel {
+        margin-top: 1%;
+
+        height: 10%;
+
+        display: block;
+      }
+    }
+
+    header {
+      display: -webkit-box;
+      height: 10%;
+    }
+  }
+
+  &.show-menu {
+    margin-left: 77%;
+  }
+
+  .pads {
+
+    .pad {
+      display: -webkit-box;
+      height: 20%;
+
+      -webkit-box-flex: 1;
+      -webkit-box-orient: vertical;
+    }
+  }
+
+  .effects-panel {
+    display: -webkit-box;
+    height: 10%;
+
+    // Default display
+    display: none;
+  }
+
+  footer {
+    display: -webkit-box;
+    height: 10%;
+  }
+}
